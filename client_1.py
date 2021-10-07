@@ -7,6 +7,9 @@ print("Socket is created.")
 soc.connect(("localhost", 10000))
 print("Connected to the server.")
 
+
+
+
 msg = "A message from the client."
 msg = pickle.dumps(msg)
 soc.sendall(msg)
