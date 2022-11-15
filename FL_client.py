@@ -10,7 +10,7 @@ print("Connected to the server.")
 msg = "A message from the client."
 msg = pickle.dumps(msg)
 soc.sendall(msg)
-print("Client sent a message to the server.")
+print("Client sent message to the server.")
 
 received_data = b''
 while str(received_data)[-2] != '.':
